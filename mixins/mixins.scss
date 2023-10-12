@@ -1,0 +1,9 @@
+@mixin font ($size, $weight, $height, $color) {
+  font: {
+    family: "Roboto", "arial";
+    size: $size;
+    weight: $weight;
+  }
+  line-height: $height;
+  color: $color;
+}

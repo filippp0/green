@@ -1,0 +1,79 @@
+// @import '../mixins/mixins.scss';
+
+.grow {
+  &__title {
+    position: absolute;
+    top: 35%;
+    right: 105px;
+    margin: 0;
+    // color: #88E53E;
+    // font-size: 179px;
+    // font-weight: normal;
+    @include font (179px, normal, 1.25, #88E53E);
+
+    @media screen and (max-width:1024px) {
+        @include font (110px, normal, 1.25, #88E53E)
+    }
+
+    @media screen and (max-width:768px) {
+      right: 3px;
+    }
+  }
+
+  &__subtitle {
+    position: absolute;
+    top: 57%;
+    right: 230px;
+    margin: 0;
+    // color: #88E53E;
+    // font-size: 179px;
+    // font-weight: normal;
+    @include font (179px, normal, 1.25, #88E53E);
+
+    @media screen and (max-width:1024px) {
+      @include font (110px, normal, 1.25, #88E53E);
+      top: 50%;
+      right: 180px;
+    }
+
+    @media screen and (max-width:768px) {
+      right: 80px;
+    }
+  }
+
+  &__text1 {
+    position: absolute;
+    top: 280px;
+    left: 24px;
+    margin: 0;
+    max-width: 391px;
+    min-height: 58px;
+    color: #88E53E;
+    font-size: 24px;
+    line-height: 29px;
+
+    @media screen and (max-width:1024px) {
+        // @include font (110px, normal, 1.25, #88E53E);
+        max-width: 320px;
+    }
+
+    @media screen and (max-width:768px) {
+        // @include font (110px, normal, 1.25, #88E53E);
+        top: 100px;
+    }
+  }
+
+
+  &__text2 {
+    position: absolute;
+    top: 551px;
+    left: 24px;
+    margin: 0;
+    color: #88E53E;
+  }
+
+  position: relative;
+  width: 100%;
+  min-height: 640px;
+  background-color: #004E35;
+}

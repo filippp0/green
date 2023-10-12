@@ -1,0 +1,65 @@
+.protect {
+  &__image {
+    width: 50%;
+    height: 640px;
+    background-image: url(images/IMAGE.png);
+    background-size: cover;
+
+    @media screen and (max-width:1024px) {
+      height: 500px;
+    }
+
+    @media screen and (max-width:768px) {
+      height: 300px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 640px;
+    background-color: #C0E8C0;
+
+    @media screen and (max-width:1024px) {
+      height: 500px;
+    }
+
+    @media screen and (max-width:768px) {
+      height: 300px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    @include font (63px, normal, 1.22, #004E35);
+
+    @media screen and (max-width:1024px) {
+      @include font (33px, normal, 1.22, #004E35);
+    }
+  }
+
+  &__text1 {
+    margin: 0;
+    @include font (62px, normal, 1.22, #004E35);
+
+    @media screen and (max-width:1024px) {
+      @include font (32px, normal, 1.22, #004E35);
+    }
+  }
+
+  &__text2 {
+    margin: 0;
+    @include font (60px, normal, 1.22, #004E35);
+
+    @media screen and (max-width:1024px) {
+      @include font (30px, normal, 1.22, #004E35);
+    }
+  }
+
+  display: flex;
+  // min-height: 640px;
+}

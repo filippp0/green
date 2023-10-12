@@ -1,0 +1,96 @@
+.mission {
+  &__title {
+    margin: 0;
+    font-size: 112px;
+    line-height: 100.8px;
+    font-weight: normal;
+    color: #004E35;
+
+    @media screen and (max-width:1024px) {
+      @include font (75px, normal, 1.22, #004E35);
+    }
+  }
+
+  &__text {
+    margin: 0 0 68px 0;
+    font-size: 108px;
+    line-height: 100.8px;
+    color: #004E35;
+
+    @media screen and (max-width:1024px) {
+      @include font (75px, normal, 1.22, #004E35);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #004E35;
+    margin-bottom: 33.2px;
+  }
+
+  &__items {
+    &:first-child {
+      padding-top: 15px;
+      padding-left: 17px;
+
+      @media screen and (max-width:1024px) {
+        padding: 0;
+      }
+    }
+
+    &:last-child {
+      margin-right: 17px;
+
+      @media screen and (max-width:1024px) {
+        padding: 0;
+        margin-right: 0;
+      }
+    }
+
+    max-width: 88px;
+    margin:0 34px 17.8px 0;
+
+    @media screen and (max-width:768px) {
+      margin-right: 5px;
+      max-width: 61px;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    margin: 0;
+    // font-size: 17px;
+    // line-height: 20px;
+    // color: #004E35;
+    @include font (17px, normal, 0.85, #004E35);
+
+    @media screen and (max-width:1024px) {
+      @include font (14px, normal, 1.22, #004E35);
+    }
+
+    @media screen and (max-width:768px) {
+      @include font (12px, normal, 1.22, #004E35);
+    }
+  }
+
+  &__main-text{
+    margin: 0;
+    text-align: center;
+    max-width: 595px;
+    @include font (24px, normal, 1.22, #004E35);
+
+    @media screen and (max-width:768px) {
+      @include font (14px, normal, 1.22, #004E35);
+    }
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 0;
+  background-color: #FBF4EB;
+}
