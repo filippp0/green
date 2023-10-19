@@ -6,9 +6,7 @@
     top: 35%;
     right: 105px;
     margin: 0;
-    // color: #88E53E;
-    // font-size: 179px;
-    // font-weight: normal;
+    // user-select: none;
     @include font (179px, normal, 1.25, #88E53E);
 
     @media screen and (max-width:1024px) {
@@ -25,9 +23,6 @@
     top: 57%;
     right: 230px;
     margin: 0;
-    // color: #88E53E;
-    // font-size: 179px;
-    // font-weight: normal;
     @include font (179px, normal, 1.25, #88E53E);
 
     @media screen and (max-width:1024px) {
@@ -53,12 +48,10 @@
     line-height: 29px;
 
     @media screen and (max-width:1024px) {
-        // @include font (110px, normal, 1.25, #88E53E);
         max-width: 320px;
     }
 
     @media screen and (max-width:768px) {
-        // @include font (110px, normal, 1.25, #88E53E);
         top: 100px;
     }
   }
